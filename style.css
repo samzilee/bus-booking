@@ -228,6 +228,7 @@ nav {
 .top-option p {
   font-size: 16px;
   font-weight: bolder;
+  text-wrap: nowrap;
 }
 .top-option img {
   width: 16px;
@@ -258,6 +259,7 @@ nav {
   flex-direction: column;
   row-gap: 5px;
   margin-bottom: 5px;
+  text-wrap: nowrap;
 }
 .option p {
   font-size: 12px;
