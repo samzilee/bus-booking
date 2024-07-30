@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>busbad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="passengerSelctorPage.css" />
+  </head>
+  <body>
+    <div id="mobile-version">
+      <div id="container">
+        <header>
+          <div class="head">
+            <div class="left-header">
+              <img src="icons/Busbud_ideq6LBzRF_1.png" />
+            </div>
+
+            <div class="right-header">
+              <img src="icons/menu.svg" onclick="sideBar();" />
+            </div>
+          </div>
+          <article class="note">
+            <div>
+              <h1>Find cheap bus tickets for your next trip in South Africa</h1>
+              <p>Easily compare and book your next trip with Busbud</p>
+            </div>
+          </article>
+        </header>
+
+        <nav>
+          <div class="container-nav">
+            <div class="relative-nav" id="line-under">
+              <p>ORIGIN</p>
+              <input type="text" placeholder="Leaving from..." />
+            </div>
+            <div class="relative-nav">
+              <p>DESTINATION</p>
+              <input type="text" placeholder="Going to..." />
+            </div>
+          </div>
+
+          <div class="container-nav" id="dates">
+            <div class="relative-nav" id="left-side">
+              <p>Date</p>
+              <input readonly id="currentdate" />
+            </div>
+            <div class="relative-nav">
+              <p>RETURN DATE</p>
+              <input type="text" placeholder="Optional" />
+            </div>
+          </div>
+
+          <div class="container-nav">
+            <div class="relative-nav" onclick="passengerSelect();">
+              <p>passenger</p>
+              <input
+                type="text"
+                value="1 passenger"
+                readonly
+                id="passenger"
+                ;
+              />
+            </div>
+          </div>
+
+          <div class="btn-container">
+            <div class="btn">
+              <button>
+                <img src="icons/search-outline.svg" />
+                <span>Search</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="nav-footer-container">
+            <div class="nav-footer">
+              <input type="checkbox" checked />
+              <span>Search accommodations with Booking.com</span>
+            </div>
+          </div>
+
+          <section class="advaS">
+            <div class="adva-container">
+              <div class="adva">
+                <img class="stImg" src="icons/first.svg" />
+                <p>
+                  Trusted by 65M+ travelers every year looking for bus and train
+                  tickets
+                </p>
+              </div>
+              <div class="adva">
+                <img class="ndImg" src="icons/second.svg" />
+                <p>
+                  Serving 2M+ bus and train routes in more than 80 countries
+                </p>
+              </div>
+              <div class="adva">
+                <img class="rdImg" src="icons/thierd.svg" />
+                <p>Dedicated customer service from booking to travel</p>
+              </div>
+            </div>
+          </section>
+        </nav>
+
+        <footer>
+          <div>
+            <div class="footer-head">
+              <h2>Popular routes in South Africa</h2>
+            </div>
+
+            <div class="relative-footer">
+              <div class="footer-container" id="footer">
+                <!-- <div class="footer-main-content">
+                  <div class="top-option">
+                    <p>From Midrand to Johannesburg</p>
+                    <button>
+                      <img src="icons/blue-search.svg" />
+                      <span>Book</span>
+                    </button>
+                  </div>
+  
+                  <div class="option">
+                    <p>Daily Departures</p>
+                    <span>38</span>
+                  </div>
+                  <div class="option">
+                    <p>Average price</p>
+                    <span>$25</span>
+                  </div>
+                  <div class="option">
+                    <p>Average trip duration</p>
+                    <span>35m</span>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div class="trust">
+            <div class="trust-bla">
+              <h2>People from around the world trust Busbud</h2>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- menu -->
+      <menu>
+        <div class="menu-container">
+          <div class="menu-header">
+            <div class="left-header">
+              <img src="icons/Busbud_ideq6LBzRF_1.png" />
+            </div>
+
+            <div class="right-header">
+              <img src="icons/cancel.svg" onclick="sideBarCancel();" />
+            </div>
+          </div>
+
+          <div>
+            <div class="search-for">
+              <p>SEARCH FOR</p>
+            </div>
+          </div>
+
+          <div>
+            <div id="bbbbb">
+              <div class="summary" onclick="showList1();">
+                <div class="detail">
+                  <img src="icons/icons8-bus-50.png" />
+                  <p>Buses</p>
+                </div>
+                <div id="listIcon1">
+                  <img src="icons/chevron-down.svg" />
+                </div>
+              </div>
+              <div id="listss1" style="display: none">
+                <!-- <div class="list">
+                  <p>Duban</p>
+                  <div>
+                    <img src="icons/icons8-right-50.png" />
+                  </div>
+                  <p>Johannesburg</p>
+                </div> -->
+              </div>
+            </div>
+
+            <div id="bbbbb">
+              <div class="summary" onclick="showList2();">
+                <div class="detail">
+                  <img src="icons/icons8-train-50.png" />
+                  <p>Trains</p>
+                </div>
+                <div id="listIcon2">
+                  <img src="icons/chevron-down.svg" />
+                </div>
+              </div>
+              <div id="listss2" style="display: none">
+                <!-- <div class="list">
+                  <p>Duban</p>
+                  <div>
+                    <img src="icons/icons8-right-50.png" />
+                  </div>
+                  <p>Johannesburg</p>
+                </div> -->
+              </div>
+            </div>
+
+            <div id="bbbbb3">
+              <div class="summary" onclick="showList3();">
+                <div class="detail">
+                  <img src="icons/icons8-map-50.png" />
+                  <p>Places</p>
+                </div>
+                <div id="listIcon3">
+                  <img src="icons/chevron-down.svg" />
+                </div>
+              </div>
+              <div id="listss3" style="display: none">
+                <!-- <div class="list">
+                  <p>Duban</p>
+                  <div>
+                    <img src="icons/icons8-right-50.png" />
+                  </div>
+                  <p>Johannesburg</p>
+                </div> -->
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="search-for">
+              <p>USEFUL LINKS</p>
+            </div>
+            <div class="end-of-menu">
+              <div class="end">
+                <div>
+                  <img src="icons/icons8-person-64.png" />
+                </div>
+                <p>Sing in</p>
+              </div>
+              <div class="end">
+                <div class="annoying">
+                  <img src="icons/icons8-globe-50.png" />
+                </div>
+                <p>Language - <span>English</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </menu>
+
+      <div id="passengerSelectorPage" style="display: none">
+        <div class="selector-container">
+          <div>
+            <div class="header">
+              <h2>Select passenger</h2>
+              <button onclick="passengerSelectCancel()">
+                <img src="icons/cancel.svg" />
+              </button>
+            </div>
+            <div class="main">
+              <div class="pss">
+                <div class="age">
+                  <p>Adults</p>
+                  <span>19-59 years</span>
+                </div>
+
+                <div class="left-side">
+                  <button onclick="minus('1')" id="btnMinus1">
+                    <img src="icons/icons8-minus-64.png" />
+                  </button>
+
+                  <span id="passengerCount1">1</span>
+                  <button onclick="add('1')">
+                    <img src="icons/icons8-plus-math-50.png" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="pss">
+                <div class="age">
+                  <p>Youth</p>
+                  <span>0-18 years</span>
+                </div>
+
+                <div class="left-side">
+                  <button onclick="minus('2')" id="btnMinus2">
+                    <img src="icons/icons8-minus-64.png" />
+                  </button>
+
+                  <span id="passengerCount2">0</span>
+                  <button onclick="add('2')">
+                    <img src="icons/icons8-plus-math-50.png" />
+                  </button>
+                </div>
+              </div>
+
+              <div class="pss">
+                <div class="age">
+                  <div>
+                    <p>Seniors</p>
+                    <span>60+ years</span>
+                  </div>
+                </div>
+                <div class="left-side">
+                  <button onclick="minus('3')" id="btnMinus3">
+                    <img src="icons/icons8-minus-64.png" />
+                  </button>
+
+                  <span id="passengerCount3">0</span>
+                  <button onclick="add('3')">
+                    <img src="icons/icons8-plus-math-50.png" />
+                  </button>
+                </div>
+              </div>
+
+              <label>
+                <div>
+                  <div class="switch" id="switchBorder">
+                    <div class="text">
+                      <span>Students</span>
+                      <p>
+                        Discounts may apply for passengers with a valid student
+                        ID
+                      </p>
+                    </div>
+                    <div class="CheckInput">
+                      <input type="checkbox" />
+                    </div>
+                  </div>
+
+                  <div class="switch">
+                    <div class="text">
+                      <span>Wheelchair</span>
+                      <p>Passengers traveling with a wheelchair</p>
+                    </div>
+                    <div class="CheckInput">
+                      <input type="checkbox" />
+                    </div>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="page-foot-btn">
+            <p id="comfirm"></p>
+            <button onclick="submit()">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pc-version"></div>
+
+    <script src="config.js"></script>
+    <script src="menu.js"></script>
+    <script src="passengerSelectorPage.js"></script>
+  </body>
+</html>

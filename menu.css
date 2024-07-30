@@ -1,0 +1,131 @@
+menu {
+  display: flex;
+  justify-content: end;
+  transition: 0.1s;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 1s;
+}
+
+menu::-webkit-scrollbar {
+  background-color: transparent;
+}
+.menu-container {
+  background-color: rgba(235, 252, 255, 0.8);
+  width: 90%;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: scroll;
+  padding-top: 20px;
+}
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding-right: 5px;
+}
+.search-for {
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: hsl(200, 28%, 96%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#bbbbb {
+  border-bottom: solid 0.2px rgb(195, 195, 195);
+}
+.summary {
+  margin: 16px;
+  margin-left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.summary:hover {
+  text-decoration: underline;
+}
+.summary img {
+  width: 20px;
+}
+.detail {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.detail img {
+  width: 26px;
+}
+.detail p {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list1,
+.list2,
+.list3 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+  column-gap: 7px;
+  font-weight: bold;
+  color: rgb(73, 82, 82);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.list1:hover,
+.list2:hover,
+.list3:hover {
+  background-color: hsl(199, 50%, 89%);
+}
+.list1 img,
+.list2 img,
+.list3 img {
+  width: 22px;
+}
+.end-of-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-bottom: 50px;
+}
+.end {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding-bottom: 10px;
+  border-bottom: solid 0.2px rgb(195, 195, 195);
+}
+.end p {
+  font-weight: bold;
+}
+.end:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.end img {
+  width: 25px;
+}
+.annoying img {
+  width: 20px;
+}
+.end span {
+  color: rgb(110, 110, 110);
+}
